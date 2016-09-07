@@ -13,11 +13,17 @@ class Chapter1 extends Chapter
      *
      * INSTRUCTIONS
      * Declare a variable at the top of the function below named $anyVariable with any value.
+     *
+     * A variable starts with the $ sign, followed by the name of the variable.
+     * A variable name must start with a letter or the underscore character.
+     * A variable name cannot start with a number.
+     * A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+     *
      */
     public function declareAVariable()
     {
         // CODE HERE
-
+	$anyVariable = 5;
         // DO NOT EDIT BELOW
         return $anyVariable;
     }
@@ -31,7 +37,7 @@ class Chapter1 extends Chapter
     public function declareAnInt()
     {
         // CODE HERE
-
+        $shouldBeAnInt = 10;
         // DO NOT EDIT BELOW
         return $shouldBeAnInt;
     }
@@ -44,8 +50,8 @@ class Chapter1 extends Chapter
      */
     public function declareAFloat()
     {
-        // CODE HERE
-
+	// CODE HERE
+        $shouldBeAFloat = 1.5;
         // DO NOT EDIT BELOW
         return $shouldBeAFloat;
     }
@@ -59,7 +65,7 @@ class Chapter1 extends Chapter
     public function declareABoolean()
     {
         // CODE HERE
-
+        $shouldBeABoolean = true;
         // DO NOT EDIT BELOW
         return $shouldBeABoolean;
     }
@@ -72,7 +78,8 @@ class Chapter1 extends Chapter
      */
     public function setNull($shouldBeNull)
     {
-        // CODE HERE
+	// CODE HERE
+	$shouldBeNull = null;
 
         // DO NOT EDIT BELOW
         return $shouldBeNull;
@@ -87,7 +94,7 @@ class Chapter1 extends Chapter
     public function variableCasting($becomesABoolean)
     {
         // CODE HERE
-
+        $becomesABoolean = !!$becomesABoolean;
         // DO NOT EDIT BELOW
         return $becomesABoolean;
     }
@@ -101,7 +108,7 @@ class Chapter1 extends Chapter
     public function variableAssignment($alreadySet)
     {
         // CODE HERE
-
+        $copiedValue = $alreadySet;
         // DO NOT EDIT BELOW
         return $copiedValue;
     }
@@ -115,7 +122,7 @@ class Chapter1 extends Chapter
     public function declaringConstants()
     {
         // CODE HERE
-
+        define("SAMPLE_CONSTANT","testing");
         // DO NOT EDIT BELOW
         if (SAMPLE_CONSTANT !== 'testing') {
             throw new \Exception('Constants SAMPLE_CONSTANT must equal \'testing\'');
