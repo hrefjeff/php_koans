@@ -18,6 +18,7 @@ class Chapter2 extends Chapter
     public function addition($valueOne, $valueTwo)
     {
         // CODE HERE
+        $sum = $valueOne + $valueTwo;
 
         // DO NOT EDIT BELOW
         return $sum;
@@ -34,6 +35,7 @@ class Chapter2 extends Chapter
     public function subtraction($valueOne, $valueTwo)
     {
         // CODE HERE
+        $difference = $valueOne - $valueTwo;
 
         // DO NOT EDIT BELOW
         return $difference;
@@ -49,6 +51,7 @@ class Chapter2 extends Chapter
     public function multiplication($valueOne)
     {
         // CODE HERE
+        $fourTimes = $valueOne * 4;
 
         // DO NOT EDIT BELOW
         return $fourTimes;
@@ -63,6 +66,7 @@ class Chapter2 extends Chapter
     public function division($valueOne)
     {
         // CODE HERE
+        $oneFourth = $valueOne / 4;
 
         // DO NOT EDIT BELOW
         return $oneFourth;
@@ -78,6 +82,7 @@ class Chapter2 extends Chapter
     public function modulus($valueOne)
     {
         // CODE HERE
+        $remainder = $valueOne % 5;
 
         // DO NOT EDIT BELOW
         return $remainder;
@@ -93,6 +98,8 @@ class Chapter2 extends Chapter
     public function rounding($valueOne, $valueTwo)
     {
         // CODE HERE
+        $valueOne = round($valueOne);
+        $valueTwo = round($valueTwo,2);
 
         // DO NOT EDIT BELOW
         return [$valueOne, $valueTwo];
@@ -108,6 +115,10 @@ class Chapter2 extends Chapter
     public function roundingUpAndDown($valueOne, $valueTwo)
     {
         // CODE HERE
+        //$valueTwo = round($valueTwo, PHP_ROUND_HALF_UP);
+        $valueOne = ceil($valueOne);
+        //$valueTwo = round($valueTwo, PHP_ROUND_HALF_DOWN);
+        $valueTwo = floor($valueTwo);
 
         // DO NOT EDIT BELOW
         return [$valueOne, $valueTwo];
@@ -122,6 +133,8 @@ class Chapter2 extends Chapter
     public function incrementAndDecrement($valueOne, $valueTwo)
     {
         // CODE HERE
+        $valueOne++;
+        $valueTwo--;
 
         // DO NOT EDIT BELOW
         return [$valueOne, $valueTwo];
