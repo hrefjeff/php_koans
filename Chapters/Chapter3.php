@@ -18,6 +18,7 @@ class Chapter3 extends Chapter
     public function concatenation($valueOne, $valueTwo)
     {
         // CODE HERE
+        $valueThree = $valueOne . $valueTwo;
 
         // DO NOT EDIT BELOW
         return $valueThree;
@@ -33,6 +34,7 @@ class Chapter3 extends Chapter
     public function substitution($valueOne)
     {
         // CODE HERE
+        $valueTwo = sprintf($valueOne,'Susan');
 
         // DO NOT EDIT BELOW
         return $valueTwo;
@@ -48,6 +50,7 @@ class Chapter3 extends Chapter
     public function replacement($valueOne)
     {
         // CODE HERE
+        $valueTwo = str_replace('relaxing','educational',$valueOne);
 
         // DO NOTE EDIT BELOW
         return $valueTwo;
@@ -63,6 +66,7 @@ class Chapter3 extends Chapter
     public function length($valueOne)
     {
         // CODE HERE
+        $valueTwo = strlen($valueOne);
 
         // DO NOT EDIT BELOW
         return $valueTwo;
@@ -74,10 +78,12 @@ class Chapter3 extends Chapter
      * INSTRUCTIONS
      * Assume $valueOne is an unknown string. Set $valueTwo to the 3rd character in the string. For example if
      * $valueOne = 'shark' then $valueTwo = 'a'
+     * http://php.net/manual/en/function.substr.php
      */
     public function singleCharacters($valueOne)
     {
         // CODE HERE
+        $valueTwo = $valueOne[2];
 
         // DO NOT EDIT BELOW
         return $valueTwo;
@@ -95,6 +101,10 @@ class Chapter3 extends Chapter
     public function substrings($valueOne)
     {
         // CODE HERE
+        // substr(string, start, [length]);
+        $partOne = substr($valueOne, 0, 3);
+        $partTwo = substr($valueOne, 4, 5);
+        $partThree = substr($valueOne, -2);
 
         // DO NOT EDIT BELOW
         return [$partOne, $partTwo, $partThree];
@@ -112,6 +122,12 @@ class Chapter3 extends Chapter
     public function changingCase($valueOne)
     {
         // CODE HERE
+        // http://php.net/manual/en/function.strtolower.php
+        $allLower = strtolower($valueOne);
+        // http://php.net/manual/en/function.strtoupper.php
+        $allUpper = strtoupper($valueOne);
+        // http://php.net/manual/en/function.ucfirst.php
+        $firstUpper = ucfirst($valueOne);
 
         // DO NOT EDIT BELOW
         return [$allLower, $allUpper, $firstUpper];
@@ -129,6 +145,7 @@ class Chapter3 extends Chapter
     public function searching($valueOne)
     {
         // CODE HERE
+        $foundLocation = stripos($valueOne, "mountain");
 
         // DO NOT EDIT BELOW
         return $foundLocation;
