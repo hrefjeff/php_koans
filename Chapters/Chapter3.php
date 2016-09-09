@@ -145,6 +145,7 @@ class Chapter3 extends Chapter
     public function searching($valueOne)
     {
         // CODE HERE
+        // http://php.net/manual/en/function.stripos.php
         $foundLocation = stripos($valueOne, "mountain");
 
         // DO NOT EDIT BELOW
